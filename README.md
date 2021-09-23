@@ -27,3 +27,11 @@ SHOW GRANTS FOR user@localhost;
 ```
 REVOKE ALL ON database_name.* FROM user@localhost;
 ```
+## CHANGE USER PASSWORD
+```
+ALTER USER 'user'@'localhost' IDENTIFIED BY 'new-password';
+```
+## APPLY CURRENT CHANGES
+```
+FLUSH PRIVILEGES;
+```
